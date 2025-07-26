@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    background-image: url(nikeone.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav{
+    background-color: rgba(255, 83, 118, 0.589);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+nav a:hover{
+    background-color: #ffffff6e;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;  
+    background-color: #ffffff41;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease-in-out;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+@media(max-width:800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+.content-heading {
+    text-align: center;
+    color: #fff;
+    padding: 200px 20px;
+    background-color: rgba(0, 0, 0, 0.212);
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    margin: 80px auto 40px auto;
+    font-size: 1.3em;
+}
+
+.content-products {
+    text-align: center;
+    color: #fff;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.192);
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    margin: 0 auto 60px auto;
+    font-size: 1.2em;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+    justify-content: center; /* centers the cards horizontally */
+    gap: 20px;
+    padding: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px; /* This can be removed or kept depending on spacing preference */
+    transition: transform 0.3s ease;
+    width: 250px; /* or any fixed width you like */
+}
+
+.card img{
+    background-size: contain;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card-body {
+    text-align: center;
+    cursor: pointer;
+}
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.card-btn{
+    background-color: rgba(220, 20, 60, 0.925);
+    color: #fff;
+    border: 3px solid #fff;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+.content-shops{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.192);
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    margin: 50px;
+    font-size: 1.2em;
+}
+.shop-images {
+    display: flex;
+    flex-wrap: wrap;            /* Allows wrapping on small screens */
+    gap: 20px;                  /* Space between images */
+    justify-content: center;   /* Center align all images */
+    margin-top: 20px;
+}
+.shop-images img {
+    width: 220px;               /* You can adjust this width */
+    height: auto;               /* Maintain aspect ratio */
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.shop-images img:hover {
+    transform: scale(1.05);     /* Slight zoom on hover */
+}
+
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 90%;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.192);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+.carousel-container h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  gap: 20px;
+}
+.carousel-track img {
+  flex: 0 0 calc(25% - 15px); /* 4 images per view (adjust to 33.33% for 3) */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(255,255,255,0.6);
+  border: none;
+  cursor: pointer;
+  padding: 5px 15px;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+.left-btn { left: 10px; }
+.right-btn { right: 10px; }
+
+.carousel-btn:hover {
+  background: rgba(255,255,255,0.9);
+}
+
+
+footer{
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+    

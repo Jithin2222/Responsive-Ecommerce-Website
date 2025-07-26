@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">LOGIN</a></li>
+        </ul>
+        <ul>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg></a></li>
+            <li class="hideOnMobile"><a href="#">ABOUT</a></li>
+            <li class="hideOnMobile"><a href="#">PRODUCTS</a></li>
+            <li class="hideOnMobile"><a href="#">CONTACT</a></li>
+            <li class="hideOnMobile"><a href="#">BLOG</a></li>
+            <li class="hideOnMobile"><a href="#">LOGIN</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        </nav>
+    </div>
+
+    <div class="content-heading">
+        <h1>WELCOME TO THE STORE</h1>
+        <p>Discover our latest products and services</p>
+    </div>
+
+    <div class="content-products">
+        <h2>Featured Products</h2>
+        <p>Check out our featured products below.</p>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1641745899178-021fafbb2317?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Nike Air Max</h5>
+                <p class="card-text">Nike Air Max is a popular shoe model that is known for its comfort and style.</p>
+                <button class="card-btn">Add To Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1656944227421-d0e8de487d9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Nike Air Force</h5>
+                <p class="card-text">Nike Air Force is a popular shoe model that is known for its comfort and style.</p>
+                <button class="card-btn">Add To Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1641745900309-75ceed0153e1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI2fHx8ZW58MHx8fHx8" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Nike Air Max 270</h5>
+                <p class="card-text">Nike Air Max 270 is a popular shoe model that is known for its comfort and style.</p>
+                <button class="card-btn">Add To Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1706550630940-4c72f689002a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyOXx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Nike Jordan</h5>
+                <p class="card-text">Nike Jordan is a popular shoe model that is known for its comfort and style.</p>
+                <button class="card-btn">Add To Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1706550632197-fd5981d6f099?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDU0fHx8ZW58MHx8fHx8" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <button class="card-btn">Add To Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1712168332222-c1996322f935?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDc2fHx8ZW58MHx8fHx8" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <button class="card-btn">Add To Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1644426059269-36535c7c00fc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDk1fHx8ZW58MHx8fHx8" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <button class="card-btn">Add To Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1580902394724-b08ff9ba7e8a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExNHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <button class="card-btn">Add To Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1669205073423-5da5a5280572?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyNXx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <button class="card-btn">Add To Cart</button>
+            </div>
+        </div>
+    </div> 
+
+    <div class="content-shops">
+        <h2>Our Shops</h2>
+        <p>Find our stores in various locations.</p>
+        <div class="shop-images">
+            <img src="https://images.unsplash.com/photo-1581195177169-790ceff67d8a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bG9jYXRpb25zJTIwY2l0eXxlbnwwfHwwfHx8MA%3D%3D" alt="...">
+            <img src="https://images.unsplash.com/photo-1635669362468-2b83ead4b426?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bG9jYXRpb25zJTIwY2l0eXxlbnwwfHwwfHx8MA%3D%3D" alt="...">
+            <img src="https://plus.unsplash.com/premium_photo-1693149687685-a674a6b1771f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGxvY2F0aW9ucyUyMGNpdHl8ZW58MHx8MHx8fDA%3D" alt="">
+            <img src="https://images.unsplash.com/photo-1651776127603-b7a723a4cbc5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGxvY2F0aW9ucyUyMGNpdHl8ZW58MHx8MHx8fDA%3D" alt="">
+            <img src="https://plus.unsplash.com/premium_photo-1690494028558-a6f535911993?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzN8fGxvY2F0aW9ucyUyMGNpdHl8ZW58MHx8MHx8fDA%3D" alt="">
+        </div>
+    </div>
+
+    <div class="carousel-container">
+        <h1>OUR LATEST PRODUCTS</h1>
+        <button class="carousel-btn left-btn">&#10094;</button> 
+        <div class="carousel-track">
+            <img src="https://images.unsplash.com/photo-1712167631738-4dab9e53c853?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D" alt="">
+            <img src="https://images.unsplash.com/photo-1552010534-e4e817b173c2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D" alt="">
+            <img src="https://images.unsplash.com/photo-1739138053555-13321c306033?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8" alt="">
+            <img src="https://images.unsplash.com/photo-1679284392387-250597360be3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI3fHx8ZW58MHx8fHx8" alt="">
+            <img src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDMwfHx8ZW58MHx8fHx8" alt="">
+            <img src="https://images.unsplash.com/photo-1695753648663-72cc4dd99449?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDMzfHx8ZW58MHx8fHx8" alt="">
+            <img src="https://images.unsplash.com/photo-1599571720388-1a7b15206466?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDUwfHx8ZW58MHx8fHx8" alt="">
+            <img src="https://images.unsplash.com/photo-1731132198530-e4b2dc51d511?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDYxfHx8ZW58MHx8fHx8" alt="">
+            <!-- Add as many images as needed -->
+        </div>
+        <button class="carousel-btn right-btn">&#10095;</button>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+        <p>Follow us on 
+            <a href="#">Facebook</a>, 
+            <a href="#">Twitter</a>, 
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+        
+        const track = document.querySelector('.carousel-track');
+        const leftBtn = document.querySelector('.left-btn');
+        const rightBtn = document.querySelector('.right-btn');
+        let index = 0;
+        const visibleCount = 4;
+        const totalItems = track.children.length;
+
+        const updateCarousel = () => {
+            const itemWidth = track.children[0].offsetWidth + 20; // image width + gap
+            const maxIndex = Math.ceil(totalItems / visibleCount) - 1;
+            index = Math.max(0, Math.min(index, maxIndex));
+            track.style.transform = `translateX(-${index * itemWidth * visibleCount}px)`;
+        };
+
+        rightBtn.addEventListener('click', () => {
+            index++;
+            updateCarousel();
+        });
+
+        leftBtn.addEventListener('click', () => {
+            index--;
+            updateCarousel();
+        });
+
+        window.addEventListener('resize', updateCarousel);
+
+    </script>
+</body>
+</html>
